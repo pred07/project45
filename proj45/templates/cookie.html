@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico" />
+    <meta name="description" content="Who is gonna bake!" />
+    <meta name="author" content="Brijith|gR00T47" />
+
+    <title>mission-2</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.2.0/crypto-js.min.js"></script>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        /*do i sound weird--https://github.com/pred07/mission-2/blob/main/listen.wav */
+        /*caution: multiple flags ahead*/
+      }
+      #loginForm {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+      h1 {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      label {
+        display: block;
+        margin-bottom: 8px;
+      }
+      input[type="text"],
+      input[type="password"] {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+      button {
+        width: 100%;
+        padding: 10px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: #0056b3;
+      }
+      #cookieImg {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        object-fit: cover;
+        z-index: -1;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="loginForm">
+      <h1>Login Page</h1>
+      <form>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" />
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" />
+        <button type="button" onclick="validatePassword()">Login</button>
+      </form>
+    </div>
+
+    <img id="cookieImg" src="static/cookie.jpg" alt="Cookie" />
+
+    <script>
+      function clearData() {
+        var cookies = document.cookie.split("; ");
+        for (var c = 0; c < cookies.length; c++) {
+          var d = window.location.hostname.split(".");
+          while (d.length > 0) {
+            var cookieBase =
+              encodeURIComponent(cookies[c].split(";")[0].split("=")[0]) +
+              "=; expires=Thu, 01-Jan-1970 00:00:01 GMT; domain=" +
+              d.join(".");
+            var p = location.pathname.split("/");
+            document.cookie = cookieBase + (!p[1] ? "" : "; path=" + p[1]);
+            d.shift();
+          }
+        }
+
+        localStorage.clear();
+      }
+
+      clearData();
+      function validatePassword() {
+    var username = document.getElementById("username").value;
+    var password = document.getElementById("password").value;
+
+    var hashedPassword = CryptoJS.SHA256(password).toString();
+
+    if (hashedPassword === "70092422c1584816bdb4a44ea953cc93d9f4c8a564fde480ec75ee2363ae33b2") {
+        var flagPart12 = "{";
+        var flagPart01 = "C";
+        var flagPart14 = "0";
+        var flagPart15 = "0";
+        var flagPart16 = "K";
+        var cookiePart17 = "1";
+        var cookiePart18 = "3";
+        var cookiePart198 = "5";
+        var flagPart4 = "s";
+        var flagPart20 = "_";
+        var flagPart999 = "4";
+        var flagPart22 = "R";
+        var flagPart23 = "3";
+        var flagPart24 = "_";
+        var flagPart88 = "Y";
+        var flagPart26 = "U";
+        var flagPart27 = "M";
+        var flagPart100 = "t";
+        var flagPart6 = "i";
+        var flagPart32 = "k";
+        var flagPart8 = "a";
+        var cookiePart238 = "3";
+        var cookiePart24 = "_";
+        var cookiePart2137 = "Y";
+        var flagPart79 = "Y";
+        var flagPart30 = "}";
+        var cookiePart1 = "flag=S";
+        var cookiePart213 = "w";
+        var cookiePart3 = "a";
+        var cookiePart49 = "s";
+        var cookiePart5 = "t";
+        var flagPart17 = "1";
+        var flagPart57 = "S";
+        var flagPart43 = "w";
+        var flagPart3 = "a";
+        var flagPart18 = "3";
+        var flagPart99 = "5";
+        var flagPart28 = "M";
+        var cookiePart16 = "K";
+        var cookiePart6 = "i";
+        var cookiePart7 = "k";
+        var cookiePart77 = "a";
+        var cookiePart9 = "C";
+        var cookiePart10 = "t";
+        var cookiePart22 = "R";
+        var cookiePart1599 = "0";
+        var cookiePart26 = "U";
+        var cookiePart765 = "M";
+        var cookiePart11 = "f";
+        var cookiePart69 = "{";
+        var cookiePart13 = "C";
+        var cookiePart14 = "0";
+        var flagPart9 = "C";
+        var flagPart77 = "t";
+        var flagPart11 = "f";
+        var cookiePart20 = "_";
+        var cookiePart21 = "4";
+        var cookiePart28 = "M";
+        var cookiePart278 = "Y";
+        var cookiePart30 = "}";
+        
+        var flagPart31 = "localStorage.setItem('flag', '" + flagPart57 + flagPart43 + flagPart3 + flagPart4 + flagPart100 + flagPart6 + flagPart32 + flagPart8 + flagPart9 + flagPart77 + flagPart11 + flagPart12 + flagPart01 + flagPart14 + flagPart15 + flagPart16 + flagPart17 + flagPart18 + flagPart99 + flagPart20 + flagPart999 + flagPart22 + flagPart23 + flagPart24 + flagPart88 + flagPart26 + flagPart27 + flagPart28 + flagPart79 + flagPart30 + "')";
+
+        var cookiePart31 = "document.cookie='" + cookiePart1 + cookiePart213 + cookiePart3 + cookiePart49 + cookiePart5 + cookiePart6 + cookiePart7 + cookiePart77 + cookiePart9 + cookiePart10 + cookiePart11 + cookiePart69 + cookiePart13 + cookiePart14 + cookiePart1599 + cookiePart16 + cookiePart17 + cookiePart18 + cookiePart198 + cookiePart20 + cookiePart21 + cookiePart22 + cookiePart238 + cookiePart24 + cookiePart2137 + cookiePart26 + cookiePart765 + cookiePart28 + cookiePart278 + cookiePart30 + "'";
+        
+        var alertMessage = "alert('Login successful!')";
+        
+        eval(flagPart31);
+        eval(cookiePart31);
+        eval(alertMessage);
+    } else {
+        alert("Listen to me carefully...");
+    }
+}
+    </script>
+  </body>
+</html>

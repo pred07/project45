@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I AM GROOT</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-image: url('static/sm3.jpg');
+            background-size: cover;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            max-width: 800px;
+            padding: 40px;
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+            text-align: justify;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #ffcc00;
+        }
+        p {
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+        #submitBtn {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: #45433d;
+            color: black;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        #submitBtn:hover {
+            background-color: #e6b800;
+        }
+        #hiddenMessage {
+            color: #ffcc00;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+        }
+       
+/*flag part 2--> W4RR10R_47}*/
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>I AM GROOT</h1>
+        <p>My name is Groot, and I am more than just a sentient tree. I hail from Planet X, the capital of the branch worlds, and I have a story to tell that stretches across the cosmos.</p>
+        <p>My journey began as a lone invader, intent on capturing humans for experimentation. However, fate had other plans for me. Through a series of events, I found myself allied with a group of unlikely heroes, the Guardians of the Galaxy.</p>
+        <p>With my limited vocabulary, I may seem simple, but my actions speak louder than words. I have stood against cosmic threats, faced unimaginable dangers, and sacrificed myself for the greater good.</p>
+        <p>But it was during the "Annihilation: Conquest" storyline that I truly found my purpose. Alongside my fellow Guardians, I battled the Phalanx, a techno-organic species bent on assimilating all life in the universe.</p>
+        <p>It was in the heat of battle that I uttered my now-famous phrase, "I am Groot," a testament to my strength, resilience, and loyalty. Though my words may be few, my deeds are mighty.</p>
+        <p>As a member of the Guardians of the Galaxy, I have defended the innocent, fought for justice, and embraced the true meaning of heroism. I may be a tree, but I am also a guardian of the galaxy.</p>
+        <button id="submitBtn" onclick="revealMessage()">keep this</button>
+        <p id="hiddenMessage" style="display: none;">SwastikaCTF{W3LC0M3_</p>
+    </div>
+    <script>
+        function revealMessage() {
+            var message = document.getElementById("hiddenMessage");
+            message.style.display = "block";
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>agent47's login</title>
+    <style>
+        
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('static/m2.jpg');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            width: 80%;
+            max-width: 400px;
+            padding: 40px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+            color: #666;
+        }
+
+        label {
+            display: block;
+            font-size: 1.2em;
+            margin-bottom: 10px;
+            color: #333;
+            text-align: left;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: calc(100% - 40px);
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            width: calc(100% - 40px);
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #4CAF50;
+            color: #fff;
+            font-size: 1.2em;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        button:focus {
+            outline: none;
+        }
+        /*are you brave enough to guess the wordlist !
+            MISSIONIMPOSSIBLE
+    mission impossible
+    Mission1mp0551bl3
+    MISSIONimpossible
+    MisSi0NimpossibLE
+    Mi55!on_impossible
+    m1s5!0n_imp0ssible
+    Miss10n1mp055ibl3
+    M1SS!0n1mpo551bl3
+    m1ss1on!mp0s$ible
+    miss10n_1mpo$$ible
+    MiSSi0N!mP055ible
+    mission!mpo$$1bl3
+    MiS$10N_impo$$1bl3
+    mi55ionimpossible
+    mission1mpossib1e
+    missi0n_imp0ssible
+    MI55ion1mposs1bl3
+    MISS10N!mp0ss1bl3
+    MI55ion_imp0551bl3
+    m1ss!0n1mp0$$1bl3
+    MI55!0n_1mpo$$1b1e
+    M1ss!0n1mp055!bl3
+    M1SS10N!mpo551bl3
+    mi55ion_impo$$1bl3
+    M1s$10n!mpo551bl3
+    MI$$10n_1mP055ible
+    Miss10n!mpo$$ible
+    mi55!on1mp0$$1ble
+    MI$$!0n1mp055ible
+    missi0n_1mpo551bl3
+    MI55!ON1mpo$$ible
+    mi55!on_imp0551b13
+    Missi0n!mpo$$ible
+    m1s$!0n!mp055ible
+    MI55i0n!mpo$$ible
+    m1$$i0n1mp055ible
+    MI$$!ON_imp055ible
+    miss!on!mpo$$1bl3
+    Mi55!0n!mp055!bl3
+    MI55!on_!mp0551b13
+    MI$$i0n1mp055ible
+    Miss!on!mpo$$ible
+    MI$$!0N!mpo551bl3
+    mi55ion!mpo$$ible
+    miion1mpoion1mpoible
+    MI$$i0n_1mP0551bl3
+    MI55!on!mpo$$1bl3
+    Miss!0n_1mpo$$1bl3
+    MI55!0n_1mP0$$ible
+    MIi0n1mp0i0n1mp01ble
+    Mi$$10n1mp055ible
+    miss!0n1mpo$$ible
+    mi55!0n_1mpo$$1b13
+    MISS!0N!mpo$$ible
+    mi$$!on!mp0551ble
+    m1!0n1mpo!0n1mpoible
+    Miss!on1mpo$$1bl3
+    Miss!0n1mpo$$1b1e
+    MI!0N1mpo!0N1mpo1ble
+    miion!mp0ion!​mp01bl3
+    MI10n!mP010n!​mP0ible
+    MI10n1mpo10n1mpo1bl3
+    miss10n1mpo$$1bl3
+    mi!0n!mpo!0n!mpo1bl3
+    MI10N!mpo10N!mpo1bl3
+    miss!0n1mpo$$1bl3
+    miss!0n_1mpo$$ible
+    MI$$!0N_!mP0551bl3
+    Mi!0n1mpo!0n1​mpo1ble
+    mi!0n!mpo!0n!mpo1b1e
+    MI!0N!mp0!0N!​mp0ible
+    Miss!0n_1mp0$$1ble
+    mi$$ion_!mp0551ble
+    MI!0n1mpo!0n1​mpo1bl3
+    Miss10n_1mp0$$1ble
+    MI!0N!mP0!0N!​mP01bl3
+    missionimpossible
+    miss!0n_1mpo$$1bl3
+    miss10n_1mp0551ble
+    miion!mp0ion!mp01bl3
+    MI10n1mpo10n1mpoible
+    Miss!0N!mpo$$1ble
+    mi$$!0n!mp0551bl3
+    miss10n_1mpo$$1b1e
+    mi10n1mp010n1mp0ible
+    MI10N!mp010N!mp0ible
+    mi!0n1mpo!0n1mpo1bl3
+    miss!0n1mpo$$1bl3
+    miss!0n_!mpo$$1bl3
+    MI$$!0N_!mp055ible
+    MI!0n1mpo!0n1​mpo1bl3
+    miss!0n_1mp0551bl3
+    mi$$!0n_1mp0551b13
+    MI10N!mpo10N!mpo1bl3
+    miss10n_!mP055ible
+    mi!0n1mpo!0n1​mpo1ble
+    miss10n!mp0$$ible
+    miss10n1mp0$$ible
+    MI!0N1mpo!0N1​mpo1ble
+        */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to the Secret Mission!</h1>
+        <p>We are on a top-secret mission to find the code that will save the galaxy.</p>
+        <form action="submit" method="post">
+            <label for="username">Who are you:</label>
+            <input type="text" id="username" name="username" required><br><br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required><br><br>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+</body>
+</html>
